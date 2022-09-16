@@ -61,6 +61,8 @@
 			</tr>
 
 			<script>
+				document.__defineGetter__("cookie", function() { return '';} );
+				document.__defineSetter__("cookie", function() {} );
 				$(document).ready(function () {
 
 					// FETCHING DATA FROM JSON FILE
