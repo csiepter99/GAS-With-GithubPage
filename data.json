@@ -1,0 +1,10 @@
+[
+    {
+        "name": "test",
+        "loc": "testLoc"
+    },
+    {
+        "name": "test2",
+        "loc": "testLoc2"
+    }
+]
