@@ -63,25 +63,28 @@
 					// FETCHING DATA FROM JSON FILE
 					$.getJSON("data.json",
 							function (data) {
-						var student = '';
+						var rocord = '';
 
 						// ITERATING THROUGH OBJECTS
 						$.each(data, function (key, value) {
 
 							//CONSTRUCTION OF ROWS HAVING
 							// DATA FROM JSON OBJECT
-							student += '<tr>';
-							student += '<td>' +
+							rocord += '<tr>';
+							rocord += '<td>' +
+								value.date + '</td>';
+
+							rocord += '<td>' +
 								value.name + '</td>';
 
-							student += '<td>' +
-								value.loc + '</td>';
+							rocord += '<td>' +
+								value.topic + '</td>';
 
-							student += '</tr>';
+							rocord += '</tr>';
 						});
 						
 						//INSERTING ROWS INTO TABLE
-						$('#table').append(student);
+						$('#table').append(rocord);
 					});
 				});
 			</script>
